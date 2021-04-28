@@ -1,15 +1,14 @@
 import React from 'react';
 import Layout from '../components/Layout';
-import { Link } from 'gatsby';
+import ImganHotel from '../components/ImagenHotel';
 
-
-const IndexPage = () => (
-  <>
-    <Layout>
-      <h1>Hotel Gatsby</h1>
-
-    </Layout>
-  </>
-)
-
-export default IndexPage
+const IndexPage = () => {
+  return(
+    <>
+      <Layout>
+          <ImganHotel />
+      </Layout>
+    </>
+  )
+}
+export default IndexPage;

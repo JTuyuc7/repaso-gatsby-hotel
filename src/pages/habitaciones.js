@@ -1,15 +1,14 @@
 import React from 'react';
 import Layout from '../components/Layout';
 
-
-const Inicio = () => {
+const Habitaciones = () => {
     return (  
         <>
             <Layout>
-                <h1>Desde inicio</h1>
+                <h1>Sobre nuestras habitaciones</h1>
             </Layout>
         </>
     );
 }
 
-export default Inicio;
+export default Habitaciones;
