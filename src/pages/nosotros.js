@@ -1,11 +1,15 @@
 import React from 'react';
 import Layout from '../components/Layout';
+import ContenidoNosotros from '../components/contenidoNosotros';
 
 const Nosotros = () => {
+
     return (  
-        <Layout>
-            <h1>Sobre Nosotros</h1>
-        </Layout>
+        <>
+            <Layout>
+                <ContenidoNosotros />
+            </Layout>
+        </>
     );
 }
 

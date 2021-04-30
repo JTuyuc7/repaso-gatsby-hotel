@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import Navegacion from './Navegacion';
 
 const HeaderTitulo = styled.header`
-    background-color: #333;
+    background-color: #222;
     padding: 1rem;
 `;
 
