@@ -40,7 +40,7 @@ const HabitacionPreview = (habitacion) => {
 
     //console.log(habitacion.habitacion)
     const { titulo, contenido, slug, imagen } = habitacion.habitacion;
-    console.log(habitacion.habitacion.imagen.gatsbyImageData);
+    //console.log(habitacion.habitacion.imagen.gatsbyImageData);
     return (  
         <>
             <Contenedor>

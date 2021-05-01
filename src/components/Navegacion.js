@@ -37,7 +37,7 @@ const Navegacion = () => {
             <div>
                 <Nav>
                     <LinkNav activeClassName="pagina-actual" to="/" >Inicio</LinkNav>
-                    <LinkNav activeClassName="pagina-actual" to="/habitaciones">Habitaciones</LinkNav>
+                    <LinkNav activeClassName="pagina-actual" to="/imagenes">Imágenes</LinkNav>
                     <LinkNav activeClassName="pagina-actual" to="/nosotros">Nosotros</LinkNav>
                 </Nav>
             </div>

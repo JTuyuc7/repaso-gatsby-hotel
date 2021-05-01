@@ -9,12 +9,21 @@ const Logo = styled(Link)`
     font-size: 2rem;
     font-weight: bold;
     font-family: 'Roboto', serif;
-    
 `;
 
 const HeaderTitulo = styled.header`
     background-color: #222;
-    padding: 1rem;
+    padding: 3rem;
+
+    p{
+        text-align: center;
+        color: #fff;
+        margin-bottom: 0;
+    }
+
+    span{
+        font-weight: bold;
+    }
 `;
 
 const DivTitulo = styled.div`
@@ -34,7 +43,30 @@ const DivTitulo = styled.div`
     }
 `;
 
-const Header = () => {
+const DivFooter = styled.div`
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 90%;
+
+    h1{
+        font-size: 2rem;
+
+        &:hover{
+            color: #f5e5a1;
+        }
+    }
+
+    @media( min-width: 768px){
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+`;
+
+const Footer = () => {
+
+    const year = new Date().getFullYear();
+
     return (  
         <>
             <div>
@@ -47,10 +79,17 @@ const Header = () => {
                         <Navegacion />
                     </DivTitulo>
 
+                    <DivFooter>
+                        <Logo to="#"> <h1>Facebook</h1></Logo>
+                        <Logo to="#"> <h1>Instagram</h1></Logo>
+                        <Logo to="#"> <h1>Twitter</h1></Logo>
+                    </DivFooter>
+
+                    <p>Hotel Gatsby <span>Todos los derechos reservados &copy; </span> {year}</p>
                 </HeaderTitulo>
             </div>
         </>
     );
 }
 
-export default Header;
+export default Footer;

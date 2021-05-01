@@ -59,6 +59,7 @@ const ContenidoInicio = () => {
                     <p>{contenido}</p>
 
                     <GatsbyImage image={imagen.gatsbyImageData} alt="Imagen Inicio"/>
+                                
                 </ContenidoDiv>
             </div>
         </>
