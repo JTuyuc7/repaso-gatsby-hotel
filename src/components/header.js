@@ -2,6 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 import Navegacion from './Navegacion';
 import { Link } from 'gatsby';
+import UseSeo from '../hooks/use-Seo';
 
 const Logo = styled(Link)`
     color: #fff;
@@ -35,6 +36,10 @@ const DivTitulo = styled.div`
 `;
 
 const Header = () => {
+
+    const data = UseSeo();
+    const { siteName } = data;
+
     return (  
         <>
             <div>
@@ -42,7 +47,7 @@ const Header = () => {
                     <DivTitulo>
                             <Logo 
                                 to={'/'}
-                            ><h1>Hotel Gatsby</h1></Logo>
+                            ><h1>{siteName}</h1></Logo>
                         
                         <Navegacion />
                     </DivTitulo>

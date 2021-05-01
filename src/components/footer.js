@@ -3,6 +3,8 @@ import styled from '@emotion/styled';
 import Navegacion from './Navegacion';
 import { Link } from 'gatsby';
 
+import UseSeo from '../hooks/use-Seo';
+
 const Logo = styled(Link)`
     color: #fff;
     text-decoration: none;
@@ -65,6 +67,9 @@ const DivFooter = styled.div`
 
 const Footer = () => {
 
+    const datos = UseSeo();
+    const { siteName } = datos;
+
     const year = new Date().getFullYear();
 
     return (  
@@ -74,7 +79,7 @@ const Footer = () => {
                     <DivTitulo>
                             <Logo 
                                 to={'/'}
-                            ><h1>Hotel Gatsby</h1></Logo>
+                            ><h1>{siteName}</h1></Logo>
                         
                         <Navegacion />
                     </DivTitulo>

@@ -4,8 +4,13 @@ import Footer from './footer';
 import Helmet from 'react-helmet';
 import { css } from '@emotion/react';
 import { Global } from '@emotion/react';
+import UseSeo from '../hooks/use-Seo';
 
 const Layout = ( props ) => {
+
+    const data = UseSeo();
+    const { fallbackSeo : { title }} = data;
+
     return (  
         <>
 
@@ -46,7 +51,7 @@ const Layout = ( props ) => {
             />
 
             <Helmet>
-                <title>Hotel Gatsby - Repaso</title>
+                <title>{title}</title>
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous" />
                 <link rel="preconnect" href="https://fonts.gstatic.com"/>
                 <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet" /> 
